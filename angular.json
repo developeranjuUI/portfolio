@@ -21,13 +21,47 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/logo-black.png",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/custom-animation.css",
+              "src/assets/css/swiper-bundle.css",
+              "src/assets/css/slick.css",
+              "src/assets/css/font-awesome-pro.css",
+              "src/assets/css/spacing.css",
+              "src/assets/css/main.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.js",
+              "src/assets/js/bootstrap-bundle.js",
+              "src/assets/js/gsap.js",
+              "src/assets/js/gsap-scroll-smoother.js",
+              "src/assets/js/gsap-scroll-trigger.js",
+              "src/assets/js/gsap-scroll-to-plugin.js",
+              "src/assets/js/gsap-split-text.js",
+              "src/assets/js/swiper-bundle.js",
+              "src/assets/js/wow.js",
+              "src/assets/js/slick.js",
+              "src/assets/js/pagepiling.js",
+              "src/assets/js/headroom.min.js",
+              "src/assets/js/magnific-popup.js",
+              "src/assets/js/nice-select.js",
+              "src/assets/js/purecounter.js",
+              "src/assets/js/hammer.js",
+              "src/assets/js/matter.js",
+              "src/assets/js/throwable.js",
+              "src/assets/js/isotope-pkgd.js",
+              "src/assets/js/imagesloaded-pkgd.js",
+              "src/assets/js/ajax-form.js",
+              "src/assets/js/theme-settings.js",
+              "src/assets/js/animated-headline.js",
+              "src/assets/js/main.js",
+              "src/assets/js/email-decode.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -83,7 +117,7 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
+              "src/logo-black.png",
               "src/assets"
             ],
             "styles": [
@@ -94,5 +128,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
