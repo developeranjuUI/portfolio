@@ -21,7 +21,9 @@ li,
   -o-transform: translateY(-1px);
   transform: translateY(-1px);
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .tp-testimonial-rating span svg, .tp-award-btn span svg, .tp-award-arrow svg, .tp-hero-social a svg, .tp-header-cv-btn svg, .tp-hotspot svg, .tp-pagination ul li a svg, .tp-pagination ul li span svg, .tp-swiper-arrow button svg, .tp-btn svg, .tp-btn-border-md span svg {
   -webkit-transform: translateY(-2px);
   -moz-transform: translateY(-2px);
@@ -4768,11 +4770,7 @@ div.tp-theme-toggle-single .themepure-theme-toggle-input {
   -o-transform: translateX(calc(100% + 80px));
   transform: translateX(calc(100% + 80px));
 }
-@media (max-width: 767px) {
-  .tp-offcanvas-area-2 {
-    width: 100%;
-  }
-}
+
 .tp-offcanvas-area-2.opened {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -5473,6 +5471,20 @@ div.tp-theme-toggle-single .themepure-theme-toggle-input {
   .tp-section-subtitle-bg {
     font-size: 100px;
     left: 0;
+  }
+  .tp-offcanvas-area-2.tp-offcanvas-area-2 {
+    width: 86%;
+    padding: 20px;
+  }
+  .tp-offcanvas-top-2{
+    margin-bottom: 25px;
+  }
+  .tp-portfolio-item a{
+    display: flex;
+    flex-direction: column;
+  }
+  .tp-portfolio-thumb-img{
+    top: -70px
   }
 }
 .tp-section-title {
@@ -6191,16 +6203,16 @@ button.ui-button::-moz-focus-inner, input.ui-button::-moz-focus-inner {
 }
 
 .ui-draggable-handle, .ui-selectable, .ui-sortable-handle {
-  -ms-touch-action: none;
-  touch-action: none;
+  -ms-touch-action: pinch-zoom;
+  touch-action: pinch-zoom;
 }
 
 .ui-resizable-handle {
   position: absolute;
   font-size: 0.1px;
   display: block;
-  -ms-touch-action: none;
-  touch-action: none;
+  -ms-touch-action: pinch-zoom;
+  touch-action: pinch-zoom;
 }
 
 .ui-resizable-n {
@@ -6352,8 +6364,8 @@ button.ui-button::-moz-focus-inner, input.ui-button::-moz-focus-inner {
   width: 1.2em;
   height: 1.2em;
   cursor: default;
-  -ms-touch-action: none;
-  touch-action: none;
+  -ms-touch-action: pinch-zoom;
+  touch-action: pinch-zoom;
 }
 
 .ui-slider .ui-slider-range {

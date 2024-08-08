@@ -26,32 +26,33 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/css/bootstrap.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/main.css",
+              "src/assets/css/spacing.css",
               "src/assets/css/animate.css",
               "src/assets/css/custom-animation.css",
-              "src/assets/css/swiper-bundle.css",
+              "node_modules/swiper/swiper-bundle.min.css",
               "src/assets/css/slick.css",
-              "src/assets/css/font-awesome-pro.css",
-              "src/assets/css/spacing.css",
-              "src/assets/css/main.css"
+              "src/assets/css/font-awesome-pro.css"
+              
             ],
             "scripts": [
-              "src/assets/js/jquery.js",
-              "src/assets/js/bootstrap-bundle.js",
-              "src/assets/js/gsap.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/gsap/dist/gsap.min.js",
               "src/assets/js/gsap-scroll-smoother.js",
-              "src/assets/js/gsap-scroll-trigger.js",
-              "src/assets/js/gsap-scroll-to-plugin.js",
+              "node_modules/gsap/dist/ScrollTrigger.min.js",
+              "node_modules/gsap/dist/ScrollToPlugin.js",
               "src/assets/js/gsap-split-text.js",
-              "src/assets/js/swiper-bundle.js",
-              "src/assets/js/wow.js",
+              "node_modules/swiper/swiper-bundle.min.js",
+              "node_modules/wowjs/dist/wow.min.js",
               "src/assets/js/slick.js",
               "src/assets/js/pagepiling.js",
               "src/assets/js/headroom.min.js",
-              "src/assets/js/magnific-popup.js",
-              "src/assets/js/nice-select.js",
-              "src/assets/js/purecounter.js",
-              "src/assets/js/hammer.js",
+              "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
+              "node_modules/jquery-nice-select/js/jquery.nice-select.min.js",
+              "node_modules/@srexi/purecounterjs/dist/purecounter.js",
+              "node_modules/hammerjs/hammer.min.js",
               "src/assets/js/matter.js",
               "src/assets/js/throwable.js",
               "src/assets/js/isotope-pkgd.js",
@@ -65,19 +66,32 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                  {
+                    "replace": "src/environments/environment.ts",
+                    "with": "src/environments/environment.prod.ts"
+                  }
+                ],
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "3mb",
+                  "maximumError": "8mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "5kb",
+                  "maximumError": "10kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "optimization": true,
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true
             },
             "development": {
               "buildOptimizer": false,
