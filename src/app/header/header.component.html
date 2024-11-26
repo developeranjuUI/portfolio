@@ -1,17 +1,16 @@
 <!-- header area start -->
    
 <header>
-
     <div class="tp-header-area tp-header-mob-space tp-header-transparent p-relative">
        <span class="tp-header-border w-100"></span>
        <div class="container container-large">
           <div class="row align-items-center">
              <div class="col-xl-2 col-lg-2 col-md-5 col-6">
                 <div class="logo">
-                   <a class="logo-white" [routerLink]="['/portfolio']">
+                   <a class="logo-white" routerLink="/portfolio">
                       <img data-width="115" src="https://developeranju.github.io/personal-portfolio/assets/images/logo-white.svg" alt="">
                    </a>
-                   <a class="logo-black" [routerLink]="['/portfolio']">
+                   <a class="logo-black" routerLink="/portfolio">
                       <img data-width="115" src="https://developeranju.github.io/personal-portfolio/assets/images/logo-black.svg" alt="">
                    </a>
                 </div>
@@ -21,11 +20,12 @@
                    <nav class="tp-main-menu-content text-center">
                       <ul>
                          <li class="has-dropdown">
-                            <a [routerLink]="['/portfolio']">Home</a>
+                            <a routerLink="/portfolio">Home</a>
                          </li>
-                         <li><a [routerLink]="['/about']">About me</a></li>
-                         <!-- <li><a [routerLink]="['/mywork']">My Work</a></li> -->
-                         <li><a [routerLink]="['/contact']" class="text-white fs-5">Contact</a></li>
+                         <li><a routerLink="/about">About me</a></li>
+                         <!-- <li><a routerLink="/mywork">Work Sample</a></li> -->
+                         <li><a routerLink="/contact" class="text-white fs-5">Contact</a></li>
+                         <!-- <li><a routerLink="/blog">My Blog</a></li> -->
                       </ul>
                    </nav>
                 </div>
@@ -71,7 +71,7 @@
                       </label>
                    </div>
                    <div class="tp-header-cv ml-10 d-none d-md-block">
-                      <a class="tp-header-cv-btn" title="Resume" href="/assets/images/Kr-Anju-Hembram.pdf">
+                      <a class="tp-header-cv-btn" title="Resume" href="/assets/images/Kumarianju.pdf">
                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 8C1 11.866 4.13401 15 8 15C11.866 15 15 11.866 15 8" stroke="currentColor"
@@ -104,10 +104,10 @@
           <div class="row align-items-center">
              <div class="col-xl-2 col-lg-2 col-md-5 col-6">
                 <div class="logo">
-                   <a class="logo-white" [routerLink]="['/portfolio']">
+                   <a class="logo-white" routerLink="/portfolio">
                       <img data-width="115" src="https://developeranju.github.io/personal-portfolio/assets/images/logo-white.svg" alt="">
                    </a>
-                   <a class="logo-black" [routerLink]="['/portfolio']">
+                   <a class="logo-black" routerLink="/portfolio">
                       <img data-width="115" src="https://developeranju.github.io/personal-portfolio/assets/images/logo-black.svg" alt="">
                    </a>
                 </div>
@@ -117,12 +117,18 @@
                    <nav class="tp-main-menu-content text-center">
                       <ul>
                          <li class="has-dropdown">
-                            <a [routerLink]="['/portfolio']">Home</a>
+                            <a routerLink="/portfolio">Home</a>
                          </li>
                          <li class="has-dropdown">
-                            <a [routerLink]="['/about']">About me</a>
+                            <a routerLink="/about">About me</a>
                          </li>
-                         <li><a [routerLink]="['/contact']" class="text-white fs-5">Contact</a></li>
+                         <!-- <li class="has-dropdown">
+                           <a routerLink="/mywork">Work Sample</a>
+                        </li> -->
+                         <li><a routerLink="/contact" class="text-white fs-5">Contact</a></li>
+                         <!-- <li class="has-dropdown">
+                           <a routerLink="/blog">My Blog</a>
+                        </li> -->
                       </ul>
                    </nav>
                 </div>

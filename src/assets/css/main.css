@@ -164,7 +164,8 @@ html{
   --tp-text-body: #55585B;
   --tp-text-1: #767A7D;
   --tp-theme-primary: #0989FF;
-  --tp-theme-secondary: #1A2813;
+  /* --tp-theme-secondary: #1A2813; */
+  --tp-theme-secondary: #673914;
   --tp-footer-grey-1: #F4F7F9;
   --tp-border-primary: #EAEBED;
   --tp-border-secondary: #F0F2F4;
@@ -3774,7 +3775,8 @@ div.tp-theme-toggle-single .themepure-theme-toggle-input {
 }
 
 .theme-bg-2 {
-  background-color: #213617;
+  /* background-color: #213617; */
+  background-color: #361717;
 }
 
 [data-bg-color=footer-bg-grey] {
@@ -7671,7 +7673,8 @@ xclip
   z-index: 98;
   visibility: hidden;
   transform: translateY(-100%);
-  background: #324623;
+  /* background: #324623; */
+  background: #361717;
   transition: transform 500ms ease, visibility 500ms ease;
 }
 .tp-header-area.tp-header-pinned {

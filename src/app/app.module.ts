@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { MyworkComponent } from './mywork/mywork.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     FooterComponent,
     PortfolioComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MyworkComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
