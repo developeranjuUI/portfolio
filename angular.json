@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/personal-portfolio",
+            "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -108,10 +108,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "personal-portfolio:build:production"
+              "browserTarget": "portfolio:build:production"
             },
             "development": {
-              "browserTarget": "personal-portfolio:build:development"
+              "browserTarget": "portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -119,7 +119,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "personal-portfolio:build"
+            "browserTarget": "portfolio:build"
           }
         },
         "test": {
